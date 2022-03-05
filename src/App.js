@@ -1,14 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
-function App() {
+export const App = (props) => {
+  const subject = props.subject;
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <p>Hello, {subject}!</p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -20,6 +20,4 @@ function App() {
       </header>
     </div>
   );
-}
-
-export default App;
+};
